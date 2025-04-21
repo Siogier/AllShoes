@@ -1,0 +1,243 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tienda-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#tienda-Sneakers {
+    width: 50%;
+    height: 300px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#tienda-contenido {
+    display: flex;
+    filter: grayscale(1);
+    width: 41%;
+    margin: 20px;
+
+}
+
+#tienda-contenido:hover {
+    filter: grayscale(0);
+    box-shadow: 0 0 30px black;
+}
+
+#tienda-contenedor {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    width: 50%;
+    height: 300px;
+}
+
+/* boton shoes */
+
+#tienda-shoes-contenido {
+    height: 15%;
+    text-align: center;
+    align-content: center;
+}
+
+#tienda-shoes {
+    background-color: rgba(228,225,225,255);
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    font-size: 12px;
+    width: 70px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+/* titulo boots */
+
+#tienda-titulo {
+    height: 15%;
+    font-size: 30px;
+    text-align: left;
+    align-content: center;
+}
+
+#tienda-boots {
+    margin-left: 20px;
+}
+
+/* texto */
+
+#tienda-texto {
+    height: 40%;
+}
+
+#tienda-contenido-texto {
+    align-content: center;
+    height: 100%;
+    color: rgba(203,194,188,255);
+    font-size: 10px;
+    padding-left: 20px;
+    margin-right: 5px;
+}
+
+/* opciones */
+
+#tienda-opciones {
+    height: 10%;
+    display: flex;
+}
+
+#tienda-precio, #tienda-colores {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* precios */
+
+#tienda-precio {
+    width: 70%;
+
+}
+
+#tienda-actual {
+    width: 40%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    margin-left: 15px;
+}
+
+#tienda-anterior {
+    text-align: center;
+    align-content: center;
+    margin-left: 15px;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+/* colores */
+
+#tienda-colores {
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#tienda-negro, #tienda-amarillo, #tienda-rojo {
+    width: 20px;
+    height: 70%;
+    margin: 2px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+}
+
+
+#tienda-negro {
+    background-color: black;
+    margin-left: 15px;
+}
+
+#tienda-amarillo {
+    background-color: rgba(255,189,89,255);
+}
+
+#tienda-rojo {
+    background-color: rgba(255,49,49,255);
+}
+
+/* carrito */
+
+#tienda-carrito-contenido {
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
+    margin-left: 15px;
+    margin-bottom: 10px ;
+    display: flex;
+    background-color: black;
+    margin-top: 12px;
+}
+
+.boton-interactivo:hover {
+    animation: boton-carrito 1s ease infinite;
+    color: rgba(173,103,40,255);
+    box-shadow: 0 0 20px black;
+}
+
+
+    @keyframes boton-carrito {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+#tienda-logo-carrito {
+    border: 2px solid black;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#tienda-texto-carrito {
+    border: 2px solid black;
+    width: 100%;
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+}
+
+#tienda-carrito {
+    height: 20px;
+    width: 20px; 
+}
+
+/* media query */
+
+@media (max-width: 1150px) {
+    
+    #tienda-contenido {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    #tienda-Sneakers {
+        width: 100%;
+        height: auto;
+        margin-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: none;
+    }
+
+    #tienda-contenedor {
+        width: 100%;
+        border-left: 2px solid black;
+        border-top: none;
+    }
+}
+
+@media (max-width: 628px) {
+    #tienda-contenido {
+        width: 100%;
+    }
+
+    #tienda-actual, #tienda-anterior {
+        margin: 0;
+    }
+}
+
+

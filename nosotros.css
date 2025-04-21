@@ -1,0 +1,157 @@
+
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sobre-nosotros {
+    border-bottom: 2px solid rgba(199,199,202,255);
+    border-top: 2px solid rgba(199,199,202,255);
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px black;
+}
+
+#nosotros-contenedor {
+    display: flex;
+    height: auto;
+}
+
+#nosotros-imagen {
+    width: 40%;
+    height: 450px;
+    margin: 40px;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+#nosotros-contenido {
+    margin-top: 85px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* titulo */
+
+#nosotros-titulo {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* logo */
+
+#nosotros-logo {
+    display: flex;
+    margin-top: 20px;
+}
+
+#nosotros-logo-icono-imagen {
+    width: 54px;
+}
+
+#nosotros-logo-texto {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#nosotros-all, #nosotros-shoes {
+    font-size: 27px;
+    font-family:sans-serif ;
+}
+
+#nosotros-all {
+    color: black;
+}
+
+#nosotros-shoes {
+    color: rgba(192,126,64,255);
+}
+
+/* texto */
+
+#nosotros-texto {
+    margin-top: 10px;
+}
+
+#nosotros-superior {
+    color: black;
+    font-size: 15px;
+}
+
+#nosotros-inferior {
+    color: rgba(169,167,167,255);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* redes sociales */
+
+#nosotros-iconos {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros-red {
+    width: 40px;
+    margin:30px;
+    filter: grayscale(1);
+    border-radius: 100px;
+}
+
+.nosotros-red:hover {
+    filter: grayscale(0);
+}
+
+
+@media (max-width: 720px) {
+    #nosotros-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nosotros-contenido {
+        padding-left: 30px;
+        margin-top: 0;
+    }
+
+    #nosotros-imagen {
+        width: 80%;
+        height: 300px;
+    }
+
+    #nosotros-titulo {
+        font-size: 26px;
+    }
+
+    #nosotros-logo {
+    display: flex;
+    margin-top: 20px;
+    }
+
+    #nosotros-logo-icono-imagen {
+        width: 50px;
+    }
+
+    #nosotros-all, #nosotros-shoes {
+        font-size: 23px;
+    }
+
+    #nosotros-superior {
+        font-size: 13px;
+    }
+    
+    #nosotros-inferior {
+        font-size: 15px;
+    }
+}
+
+
+

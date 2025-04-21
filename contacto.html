@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>contacto</title>
+</head>
+<body>
+
+    <header>
+        <div id="header-contenedor">
+            <div id="header-logo">
+                <div id="header-logo-icono">
+                    <img id="logo-img" src="imagenes/Logo.png">
+                </div>
+                <div id="header-logo-texto">
+                    <span id="logo-all"><strong>ALL</strong></span>
+                    <span id="logo-shoes">SHOES</span>
+                </div>
+            </div>
+            <div id="header-opciones">
+                <div id="header-opciones-texto"><a href="index.html">INICIO</a></div>
+                <div id="header-opciones-texto"><a href="tienda.html">TIENDA</a></div>
+                <div id="header-opciones-texto"><a href="nosotros.html">NOSOTROS</a></div>
+                <div id="header-opciones-texto">CONTACTO</div>
+            </div>
+            <div id="header-botones">
+
+                <div id="header-login">
+                    <div id="header-login-icono">
+                        <img id="img-login" src="imagenes/login-icono.png">
+                    </div>
+                    <div id="header-login-texto">Login</div>
+                </div>
+
+                <div id="header-register">
+                    <div id="header-register-icono">
+                        <img id="img-register" src="imagenes/register-icono.png">
+                    </div>
+                    <div id="header-register-texto">Register</div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <contacto>
+        
+        <div id="contacto-superior"><strong>CONTACTO</strong></div>
+        <div id="contacto-inferior">
+    
+            <div id="contacto-contenedor">
+                <div id="contacto-titulo"><strong>¿TIENES ALGUNA DUDA?</strong></div>
+                <div id="contacto-subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil?</div>
+                <div id="contacto-texto" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit hic excepturi minima omnis odio odit quam modi, fugiat ut vitae voluptate? Dolorum ullam cumque architecto nihil voluptate voluptatum est sunt voluptas accusamus quas iste itaque praesentium officiis, excepturi sapiente.</div>
+                <div id="contacto-email-titulo"><strong>E-Mail</strong></div>
+                <div id="contacto-email">
+                    <div id="contacto-email-logo">
+                        <img id="mail-logo" src="imagenes/mail-reception-svgrepo-com.png">
+                    </div>
+                    <div id="contacto-email-texto">info@allshoes.es</div>
+                </div>
+                <div id="contacto-redes-sociales"><strong>Redes Sociales</strong></div>
+                <div id="contenedor-rueda">
+
+                    <div id="rueda-redes">
+    
+                        <div id="logo-central">
+                            <img id="logo-central-icono" src="imagenes/Logo.png">
+                        </div>
+    
+                        <div class="contacto-red-logo" id="rueda-twitter">
+                            <img class="contacto-red-logo-icono" src="imagenes/icons8-twitter-circled-48.png">
+                        </div>
+    
+                        <div class="contacto-red-logo" id="rueda-insta">
+                            <img class="contacto-red-logo-icono" src="imagenes/icons8-instagram-48.png">
+                        </div>
+    
+                        <div class="contacto-red-logo" id="rueda-facebook">
+                            <img class="contacto-red-logo-icono" src="imagenes/icons8-facebook-nuevo-48.png">
+                        </div>
+    
+                        <div class="contacto-red-logo" id="rueda-telegram">
+                            <img class="contacto-red-logo-icono" src="imagenes/icons8-aplicación-telegrama-48.png">
+                        </div>
+    
+                        <div class="contacto-red-logo" id="rueda-whatsapp">
+                            <img class="contacto-red-logo-icono" src="imagenes/icons8-whatsapp-48.png">
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <div id="contacto-formulario">
+                <form novalidate>
+    
+                    <input type="text" name="nombre" placeholder="Nombre" required minlength="2"/>
+    
+                    <input type="email" name="email" placeholder="E-Mail (direccions@gmail.com)" required/>
+    
+                    <input type="tel" name="telefono" placeholder="Teléfono (XXX XXX XXX)" required required pattern="\d{9}"/>
+    
+                    <select name="tema" required>
+                        <option value="">TEMA</option>
+                        <option value="pedido">Pedido</option>
+                        <option value="devolucion">Devolución</option>
+                    </select>
+    
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+    
+                    <label class="casilla">
+                        <input id="nput-casilla" type="checkbox" name="condiciones" required/>
+                        Aceptar
+                        <span id="condiciones">condiciones</span>
+                    </label>
+    
+                    <button type="submit">
+                        <img id="enviar-logo" src="imagenes/paper-plane-svgrepo-com.png"/><p>Enviar</p>
+                    </button>
+                </form>
+            </div>
+    
+        </div>
+
+    </contacto>
+
+    <footer>
+
+        <div class="footer">
+
+            <div class="footer-encabezado"><Strong>Compañía</Strong></div>
+            <div class="footer-contenido">
+                <p>Nosotros</p>
+                <p>Nuestros Servicios</p>
+                <p>Politica Privacidad</p>
+                <p>Afiliate</p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="footer-encabezado"><Strong>Ayuda</Strong></div>
+            <div class="footer-contenido">
+                <p>Preguntas</p>
+                <p>Compras</p>
+                <p>Envíos</p>
+                <p>Afiliate</p>
+                <p>Pago</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-encabezado"><Strong>Tienda</Strong></div>
+            <div class="footer-contenido">
+                <p>Ropa</p>
+                <p>Zapatos</p>
+                <p>Teléfonos</p>
+                <p>Pantallas</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-encabezado"><Strong>Siguenos</Strong></div>
+            <div class="footer-contenido" id="footer-logos">
+                <img class="footer-logo" id="footer-facebook" src="imagenes/facebook-svgrepo-com.png">
+                <img class="footer-logo" id="footer-instagram" src="imagenes/instagram-svgrepo-com.png">
+                <img class="footer-logo" id="footer-x" src="imagenes/footer_x-removebg-preview.png">
+                <img class="footer-logo" id="footer-in" src="imagenes/linkedin-svgrepo-com.png">
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+</html>
